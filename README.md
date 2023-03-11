@@ -7,21 +7,24 @@ This is a template for a **Drupal 10** development environment, extremely editab
 
 Clone this repository:
     
-    ```bash
+
+
     git clone https://github.com/rubensantibanezacosta/Drupal_dev_template_docker.git
-    ```
+
+  
 
 Changue git remote to your own repository:
     
-    ```bash
+  
+
     git remote set-url origin YOUR_REPO_URL
-    ```
+
 
 Configure your local environment:
     
-    ```bash
+ 
     cp .env.example .env
-    ```
+   
 
 Edit the `.env` file and change the following variables. 
 
@@ -29,7 +32,7 @@ Edit the `.env` file and change the following variables.
 
 - By default, the `Drupal` installation is configured to use the default english language, but you can change it to spanish by changing the `DRUPAL_LOCALE` variable to `es`. If you want to use another language, you will add the corresponding language `.po` file to the `./drupal/config/translations` folder, and change the `DRUPAL_LOCALE` variable to the corresponding language code. In the future, I will add support for other languages upon request.
 
-    ```bash
+    ```
     # MySQL variables
     MYSQL_USER=
     MYSQL_ROOT_PASSWORD=
@@ -50,6 +53,7 @@ Edit the `.env` file and change the following variables.
     DRUPAL_SITE_NAME=
     DRUPAL_LOCALE=es
     DRUPAL_SITE_MAIL=
+
     ```
 
 You can also add extra modules to the Drupal installation by adding reference in `composer.json`  file, and the name of the module in the `extra_modules.txt` file. The modules will be installed automatically when you run the docker-compose up command. Separate them with a line break. For example:
@@ -58,31 +62,35 @@ For adding `Pathauto` module:
 
 - Add the following line to the `composer.json` file:
     
-    ```json
+
     
     ```json
+
       "require": {
         ...
         "drupal/pathauto": "^1.11"
     },
+
     ```
 - Add the following line to the `extra_modules.txt` file:
     
-    ```bash
+    ```
     pathauto
     ```
 
 To start the environment, run the following command:
     
-    ```bash
+
     docker-compose up --build
-    ```
+  
 
 To stop the environment, run the following command:
     
-    ```bash
+  
+
     docker-compose down
-    ```
+
+   
 
 
 ### Prerequisites :page_with_curl:
