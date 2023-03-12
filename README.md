@@ -3,8 +3,12 @@
 ![image](https://user-images.githubusercontent.com/44450566/224563133-f92370ad-38a7-473d-b352-6b9a39b605f7.png)
 
 
+
+
 This is a template for a **Drupal 10** development environment, extremely editable and easy to use. It is based on *Docker* and *Docker Compose*, and it is intended to be used with a local development environment.
 
+
+![image](https://user-images.githubusercontent.com/44450566/224567359-0ef2478b-5ee6-447e-b80e-c33f37c27603.png)
 
 
 ## Getting Started :rocket:
@@ -77,7 +81,7 @@ Edit the `.env` file and change the following variables.
 
     ```
 
-You can also add extra modules to the *Drupal* installation by adding reference in `composer.json`  file, and the name of the module in the `extra_modules.txt` file, or simply add the name of the module in the `extra_modules.txt` file if *Drupal* already has the module in its repository. The modules will be installed automatically when you run the docker-compose up command. Separate them with a line break. For example:
+You can also add extra modules to the *Drupal* installation by adding reference in `composer.json`  file, and the name of the module in the `extra_modules.txt` file, or simply add the name of the module in the `extra_modules.txt` file if *Drupal* already has the module in its repository. The modules will be installed automatically when you run the  `docker-compose up --build` command. Separate them with a line break. For example:
 
 For adding *Pathauto* module:
 
