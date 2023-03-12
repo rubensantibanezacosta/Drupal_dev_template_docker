@@ -102,7 +102,7 @@ For adding *Pathauto* module:
     ...
     ```
 
-To start the environment, run the following command:
+To start the environment, run the following command. The first time it boots, it takes a few minutes to install everything needed, be patient:
     
 
     docker-compose up --build
