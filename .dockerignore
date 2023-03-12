@@ -1,0 +1,8 @@
+vendor
+composer.lock
+docker-compose.yml
+Dockerfile
+.dockerignore
+.gitignore
+.git/
+.gitlab-ci.yml
