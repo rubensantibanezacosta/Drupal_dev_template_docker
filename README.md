@@ -1,7 +1,11 @@
 # Drupal DEV template Docker :whale:
 
+![image](https://user-images.githubusercontent.com/44450566/224563133-f92370ad-38a7-473d-b352-6b9a39b605f7.png)
+
 
 This is a template for a **Drupal 10** development environment, extremely editable and easy to use. It is based on *Docker* and *Docker Compose*, and it is intended to be used with a local development environment.
+
+
 
 ## Getting Started :rocket:
 
