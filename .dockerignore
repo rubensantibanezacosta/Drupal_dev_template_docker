@@ -6,3 +6,5 @@ Dockerfile
 .gitignore
 .git/
 .gitlab-ci.yml
+README.md
+mysql_data/
