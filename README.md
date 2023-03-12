@@ -143,7 +143,7 @@ The *MySQL* container is configured to use *Docker*'s internal network, so it is
 When you initialize the environment, the default Drupal installation will be downloaded and installed. You can access the site at http://localhost:8080. 
 
 
-The project is configured to install site on the first run, so it will skip the installation process if you run the `docker-compose` up command again, but you can add more modules after the first run following the instructions in the *Getting Started* section, and it will install them automatically.
+The project is configured to install site on the first run, so it will skip the installation process if you run the `docker-compose up --build` command again, but you can add more modules after the first run following the instructions in the *Getting Started* section, and it will install them automatically.
 
 
 
