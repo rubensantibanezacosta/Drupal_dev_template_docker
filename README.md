@@ -25,6 +25,31 @@ Go to the project folder:
     
 
     cd Drupal_dev_template_docker
+    
+    
+ Open the permissions of the `web` folder so that *Docker* can write in it:
+
+- *Linux*: 
+```bash
+sudo chmod 777 -R web
+```
+- *Windows powershell*: 
+  - Open the command prompt as administrator
+  - Run the following command:
+ ```
+ icacls web /grant "everyone:(OI)(CI)F" /T
+ ```
+- *Windows UI*: 
+  - Right click on the `web` folder
+  - Select `properties`
+  - Go to the `security` tab
+  - Click on the `advanced` button
+  - Click on the `change` button
+  - Select the user or group you want to give permissions to
+  - Select the permissions you want to give
+  - Click on the `apply` button
+  - Click on the `ok` button
+                
 
 
 Delete the `.git` folder:
